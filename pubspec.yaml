@@ -1,0 +1,36 @@
+name: raw
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get:
+  shared_preferences:
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  fonts:
+    - family: esamanru
+      fonts:
+        - asset: fonts/esamanru_Bold.ttf
+          weight: 700
+        - asset: fonts/esamanru_Light.ttf
+          weight: 300
+        - asset: fonts/esamanru_Medium.ttf
+          weight: 400
+
+  uses-material-design: true
