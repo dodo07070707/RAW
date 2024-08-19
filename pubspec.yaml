@@ -24,12 +24,16 @@ dev_dependencies:
 
 flutter:
   fonts:
-    - family: esamanru
+    - family: esamanruBold
       fonts:
         - asset: fonts/esamanru_Bold.ttf
           weight: 700
+    - family: esamanruLight
+      fonts:
         - asset: fonts/esamanru_Light.ttf
           weight: 300
+    - family: esamanruMedium
+      fonts:
         - asset: fonts/esamanru_Medium.ttf
           weight: 400
 

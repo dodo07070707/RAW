@@ -1,25 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:d_n/theme/color_theme.dart';
+import 'package:raw/theme/color_theme.dart';
 
-abstract class DNTextTheme {
-  static final SplashMain = TextStyle(
-    fontFamily: 'Ydestreet',
-    fontSize: 64,
+abstract class RAWTextTheme {
+  static const SplashMain = TextStyle(
+    fontFamily: 'esamanruBold',
+    fontSize: 40,
     color: Colors.white,
     letterSpacing: 2,
-    shadows: [
-      Shadow(
-        blurRadius: 10,
-        color: Colors.white.withOpacity(0.7),
-        offset: const Offset(0, 0),
-      ),
-    ],
+    fontWeight: FontWeight.w700,
   );
   static final SplashDesc = TextStyle(
-    fontFamily: 'Ydestreet',
+    fontFamily: 'esamanruLight',
     fontSize: 12,
     color: Colors.white.withOpacity(0.3),
     letterSpacing: 0,
+    fontWeight: FontWeight.w300,
   );
   static final StarthMain = TextStyle(
     fontFamily: 'Ydestreet',

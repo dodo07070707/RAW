@@ -17,13 +17,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   bool _showSplashScreen = true;
-  late Future<int?> _yearFuture;
 
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(minutes: 60), () {
-      //여기수정
+    Future.delayed(const Duration(seconds: 2), () {
       if (mounted) {
         setState(() {
           _showSplashScreen = false;
@@ -39,23 +37,11 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         fontFamily: 'Pretendard',
         colorScheme: const ColorScheme.light(
-          background: Colors.white,
           brightness: Brightness.light,
         ),
       ),
       home: Scaffold(
-        body: _showSplashScreen
-            ? const SplashScreen()
-            : FutureBuilder<int?>(
-                future: _yearFuture,
-                builder: (context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const SplashScreen();
-                  } else {
-                    return const MainScreen();
-                  }
-                },
-              ),
+        body: _showSplashScreen ? const SplashScreen() : const MainScreen(),
       ),
     );
   }
