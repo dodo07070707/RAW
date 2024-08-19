@@ -7,6 +7,8 @@ import 'package:raw/widgets/custom_text.dart';
 import 'package:get/get.dart';
 import 'package:raw/screens/pitcher_screen.dart';
 import 'package:raw/screens/batter_screen.dart';
+import 'package:raw/screens/predict_screen.dart';
+import 'package:raw/screens/info_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -44,10 +46,21 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                   Column(
                     children: [
-                      Icon(
-                        Icons.notifications_none_rounded,
-                        color: const Color(0xFFFFFFFF),
-                        size: screenWidth / 390 * 28,
+                      GestureDetector(
+                        onTap: () {
+                          Get.snackbar(
+                            '알림',
+                            '알림 기능은 준비중입니다.',
+                            snackPosition: SnackPosition.BOTTOM,
+                            duration: const Duration(seconds: 2),
+                            colorText: Colors.white,
+                          );
+                        },
+                        child: Icon(
+                          Icons.notifications_none_rounded,
+                          color: const Color(0xFFFFFFFF),
+                          size: screenWidth / 390 * 28,
+                        ),
                       ),
                       SizedBox(height: screenHeight / 844 * 4),
                     ],
@@ -192,80 +205,90 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
               SizedBox(height: screenHeight / 844 * 28),
-              Stack(
-                children: [
-                  Image.asset(
-                    'assets/images/MainBox.png',
-                    width: screenWidth / 390 * 330,
-                    height: screenHeight / 844 * 96,
-                  ),
-                  SizedBox(
-                    width: screenWidth / 390 * 330,
-                    height: screenHeight / 844 * 96,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            SizedBox(width: screenWidth / 390 * 22),
-                            const CustomText(
-                                text: 'Predict', style: RAWTextTheme.MainList)
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Image.asset(
-                              'assets/images/predict.png',
-                              width: screenWidth / 390 * 50,
-                              height: screenWidth / 390 * 50,
-                            ),
-                            SizedBox(
-                              width: screenWidth / 390 * 22,
-                            )
-                          ],
-                        )
-                      ],
+              GestureDetector(
+                onTap: () {
+                  Get.to(() => const PredictScreen());
+                },
+                child: Stack(
+                  children: [
+                    Image.asset(
+                      'assets/images/MainBox.png',
+                      width: screenWidth / 390 * 330,
+                      height: screenHeight / 844 * 96,
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: screenWidth / 390 * 330,
+                      height: screenHeight / 844 * 96,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(width: screenWidth / 390 * 22),
+                              const CustomText(
+                                  text: 'Predict', style: RAWTextTheme.MainList)
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Image.asset(
+                                'assets/images/predict.png',
+                                width: screenWidth / 390 * 50,
+                                height: screenWidth / 390 * 50,
+                              ),
+                              SizedBox(
+                                width: screenWidth / 390 * 22,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(height: screenHeight / 844 * 28),
-              Stack(
-                children: [
-                  Image.asset(
-                    'assets/images/MainBox.png',
-                    width: screenWidth / 390 * 330,
-                    height: screenHeight / 844 * 96,
-                  ),
-                  SizedBox(
-                    width: screenWidth / 390 * 330,
-                    height: screenHeight / 844 * 96,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            SizedBox(width: screenWidth / 390 * 22),
-                            const CustomText(
-                                text: 'Info', style: RAWTextTheme.MainList)
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Image.asset(
-                              'assets/images/info.png',
-                              width: screenWidth / 390 * 50,
-                              height: screenWidth / 390 * 50,
-                            ),
-                            SizedBox(
-                              width: screenWidth / 390 * 22,
-                            )
-                          ],
-                        )
-                      ],
+              GestureDetector(
+                onTap: () {
+                  Get.to(() => const InfoScreen());
+                },
+                child: Stack(
+                  children: [
+                    Image.asset(
+                      'assets/images/MainBox.png',
+                      width: screenWidth / 390 * 330,
+                      height: screenHeight / 844 * 96,
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: screenWidth / 390 * 330,
+                      height: screenHeight / 844 * 96,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(width: screenWidth / 390 * 22),
+                              const CustomText(
+                                  text: 'Info', style: RAWTextTheme.MainList)
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Image.asset(
+                                'assets/images/info.png',
+                                width: screenWidth / 390 * 50,
+                                height: screenWidth / 390 * 50,
+                              ),
+                              SizedBox(
+                                width: screenWidth / 390 * 22,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
