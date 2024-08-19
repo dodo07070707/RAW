@@ -12,12 +12,14 @@ class GraphScreen extends StatefulWidget {
 }
 
 class _GraphScreenState extends State<GraphScreen> {
+  int show = 0;
   @override
   Widget build(BuildContext context) {
     // ignore: unused_local_variable
     double screenHeight = MediaQuery.of(context).size.height;
     // ignore: unused_local_variable
     double screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       body: Container(
         decoration: GradientDesign.BlueGradient,
@@ -31,10 +33,15 @@ class _GraphScreenState extends State<GraphScreen> {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.arrow_back_ios_outlined,
-                    size: screenWidth / 390 * 24,
-                    color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      Get.back();
+                    },
+                    child: Icon(
+                      Icons.arrow_back_ios_outlined,
+                      size: screenWidth / 390 * 24,
+                      color: Colors.white,
+                    ),
                   ),
                   SizedBox(width: screenWidth / 390 * 6),
                   const CustomText(text: 'Chart', style: RAWTextTheme.PagesTop)
@@ -61,45 +68,63 @@ class _GraphScreenState extends State<GraphScreen> {
                     ),
                     Row(
                       children: [
-                        Stack(
-                          children: [
-                            Image.asset(
-                              'assets/images/SelectGraphBox.png',
-                              width: screenWidth / 390 * 60,
-                            ),
-                            SizedBox(
-                              width: screenWidth / 390 * 60,
-                              height: screenHeight / 844 * 30,
-                              child: Center(
-                                child: CustomText(
-                                    text: 'Batter',
-                                    style: RAWTextTheme.ChartSelect),
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              show = 0;
+                            });
+                          },
+                          child: Stack(
+                            children: [
+                              Image.asset(
+                                'assets/images/SelectGraphBox.png',
+                                width: screenWidth / 390 * 60,
                               ),
-                            )
-                          ],
+                              SizedBox(
+                                width: screenWidth / 390 * 60,
+                                height: screenHeight / 844 * 30,
+                                child: const Center(
+                                  child: CustomText(
+                                      text: 'Batter',
+                                      style: RAWTextTheme.ChartSelect),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
-                        Stack(
-                          children: [
-                            Image.asset(
-                              'assets/images/SelectGraphBox.png',
-                              width: screenWidth / 390 * 60,
-                            ),
-                            SizedBox(
-                              width: screenWidth / 390 * 60,
-                              height: screenHeight / 844 * 30,
-                              child: Center(
-                                child: CustomText(
-                                    text: 'Pitcher',
-                                    style: RAWTextTheme.ChartSelect),
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              show = 1;
+                            });
+                          },
+                          child: Stack(
+                            children: [
+                              Image.asset(
+                                'assets/images/SelectGraphBox.png',
+                                width: screenWidth / 390 * 60,
                               ),
-                            )
-                          ],
+                              SizedBox(
+                                width: screenWidth / 390 * 60,
+                                height: screenHeight / 844 * 30,
+                                child: const Center(
+                                  child: CustomText(
+                                      text: 'Pitcher',
+                                      style: RAWTextTheme.ChartSelect),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ],
                     ),
                   ],
                 ),
               ),
+              SizedBox(height: screenHeight / 844 * 15),
+              (show == 0)
+                  ? Image.asset('assets/images/graph_batter.png')
+                  : Image.asset('assets/images/graph_pitcher.png')
             ],
           ),
         ),
