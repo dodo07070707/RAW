@@ -30,6 +30,13 @@ abstract class RAWTextTheme {
     letterSpacing: 0,
     height: 1.5,
   );
+  static const MainListText = TextStyle(
+    fontFamily: 'esamanruBold',
+    fontSize: 20,
+    color: Colors.white,
+    letterSpacing: 0,
+    height: 1.2,
+  );
   static final ChartDesc = TextStyle(
     fontFamily: 'esamanruLight',
     fontSize: 10,

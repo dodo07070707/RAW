@@ -5,6 +5,8 @@ import 'package:raw/theme/text_theme.dart';
 import 'dart:math';
 import 'package:raw/widgets/custom_text.dart';
 import 'package:get/get.dart';
+import 'package:raw/screens/pitcher_screen.dart';
+import 'package:raw/screens/batter_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -61,80 +63,90 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
               SizedBox(height: screenHeight / 844 * 34),
-              Stack(
-                children: [
-                  Image.asset(
-                    'assets/images/MainBox.png',
-                    width: screenWidth / 390 * 330,
-                    height: screenHeight / 844 * 96,
-                  ),
-                  SizedBox(
-                    width: screenWidth / 390 * 330,
-                    height: screenHeight / 844 * 96,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            SizedBox(width: screenWidth / 390 * 22),
-                            const CustomText(
-                                text: 'Pitcher', style: RAWTextTheme.MainList)
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Image.asset(
-                              'assets/images/pitcher.png',
-                              width: screenWidth / 390 * 50,
-                              height: screenWidth / 390 * 50,
-                            ),
-                            SizedBox(
-                              width: screenWidth / 390 * 22,
-                            )
-                          ],
-                        )
-                      ],
+              GestureDetector(
+                onTap: () {
+                  Get.to(() => const PitcherScreen());
+                },
+                child: Stack(
+                  children: [
+                    Image.asset(
+                      'assets/images/MainBox.png',
+                      width: screenWidth / 390 * 330,
+                      height: screenHeight / 844 * 96,
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: screenWidth / 390 * 330,
+                      height: screenHeight / 844 * 96,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(width: screenWidth / 390 * 22),
+                              const CustomText(
+                                  text: 'Pitcher', style: RAWTextTheme.MainList)
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Image.asset(
+                                'assets/images/pitcher.png',
+                                width: screenWidth / 390 * 50,
+                                height: screenWidth / 390 * 50,
+                              ),
+                              SizedBox(
+                                width: screenWidth / 390 * 22,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(height: screenHeight / 844 * 28),
-              Stack(
-                children: [
-                  Image.asset(
-                    'assets/images/MainBox.png',
-                    width: screenWidth / 390 * 330,
-                    height: screenHeight / 844 * 96,
-                  ),
-                  SizedBox(
-                    width: screenWidth / 390 * 330,
-                    height: screenHeight / 844 * 96,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            SizedBox(width: screenWidth / 390 * 22),
-                            const CustomText(
-                                text: 'Batter', style: RAWTextTheme.MainList)
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Image.asset(
-                              'assets/images/batter.png',
-                              width: screenWidth / 390 * 50,
-                              height: screenWidth / 390 * 50,
-                            ),
-                            SizedBox(
-                              width: screenWidth / 390 * 22,
-                            )
-                          ],
-                        )
-                      ],
+              GestureDetector(
+                onTap: () {
+                  Get.to(() => const BatterScreen());
+                },
+                child: Stack(
+                  children: [
+                    Image.asset(
+                      'assets/images/MainBox.png',
+                      width: screenWidth / 390 * 330,
+                      height: screenHeight / 844 * 96,
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: screenWidth / 390 * 330,
+                      height: screenHeight / 844 * 96,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(width: screenWidth / 390 * 22),
+                              const CustomText(
+                                  text: 'Batter', style: RAWTextTheme.MainList)
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Image.asset(
+                                'assets/images/batter.png',
+                                width: screenWidth / 390 * 50,
+                                height: screenWidth / 390 * 50,
+                              ),
+                              SizedBox(
+                                width: screenWidth / 390 * 22,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(height: screenHeight / 844 * 28),
               GestureDetector(
