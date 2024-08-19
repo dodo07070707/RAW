@@ -188,7 +188,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                   children: [
                                     SizedBox(width: screenWidth / 390 * 20),
                                     const CustomText(
-                                      text: '20` 로하스',
+                                      text: '12` 박희수',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                   ],
@@ -196,7 +196,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                 Row(
                                   children: [
                                     const CustomText(
-                                      text: '242.5',
+                                      text: '247.6',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                     SizedBox(width: screenWidth / 390 * 20),
@@ -240,7 +240,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                   children: [
                                     SizedBox(width: screenWidth / 390 * 20),
                                     const CustomText(
-                                      text: '15` 나바로',
+                                      text: '13` 손승락',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                   ],
@@ -248,7 +248,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                 Row(
                                   children: [
                                     const CustomText(
-                                      text: '235.9',
+                                      text: '236.7',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                     SizedBox(width: screenWidth / 390 * 20),
@@ -292,7 +292,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                   children: [
                                     SizedBox(width: screenWidth / 390 * 20),
                                     const CustomText(
-                                      text: '16` 최형우',
+                                      text: '07` 리오스',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                   ],
@@ -300,7 +300,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                 Row(
                                   children: [
                                     const CustomText(
-                                      text: '230.4',
+                                      text: '227.3',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                     SizedBox(width: screenWidth / 390 * 20),
@@ -344,7 +344,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                   children: [
                                     SizedBox(width: screenWidth / 390 * 20),
                                     const CustomText(
-                                      text: '17` 김재환',
+                                      text: '21` 오승환',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                   ],
@@ -352,7 +352,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                 Row(
                                   children: [
                                     const CustomText(
-                                      text: '225.1',
+                                      text: '221.0',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                     SizedBox(width: screenWidth / 390 * 20),
@@ -396,7 +396,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                   children: [
                                     SizedBox(width: screenWidth / 390 * 20),
                                     const CustomText(
-                                      text: '14` 박병호',
+                                      text: '23` 서진용',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                   ],
@@ -404,7 +404,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                 Row(
                                   children: [
                                     const CustomText(
-                                      text: '221.8',
+                                      text: '218.8',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                     SizedBox(width: screenWidth / 390 * 20),
@@ -448,7 +448,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                   children: [
                                     SizedBox(width: screenWidth / 390 * 20),
                                     const CustomText(
-                                      text: '16` 김태균',
+                                      text: '06` 리오스',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                   ],
@@ -456,7 +456,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                 Row(
                                   children: [
                                     const CustomText(
-                                      text: '221.8',
+                                      text: '208.4',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                     SizedBox(width: screenWidth / 390 * 20),
@@ -500,7 +500,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                   children: [
                                     SizedBox(width: screenWidth / 390 * 20),
                                     const CustomText(
-                                      text: '18` 김재환',
+                                      text: '22` 고우석',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                   ],
@@ -508,7 +508,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                 Row(
                                   children: [
                                     const CustomText(
-                                      text: '217.6',
+                                      text: '207.1',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                     SizedBox(width: screenWidth / 390 * 20),
@@ -547,7 +547,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                   children: [
                                     SizedBox(width: screenWidth / 390 * 20),
                                     const CustomText(
-                                      text: '18` 로하스',
+                                      text: '07` 오승환',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                   ],
@@ -555,7 +555,7 @@ class _PitcherScreenState extends State<PitcherScreen> {
                                 Row(
                                   children: [
                                     const CustomText(
-                                      text: '213.5',
+                                      text: '199.1',
                                       style: RAWTextTheme.MainListText,
                                     ),
                                     SizedBox(width: screenWidth / 390 * 20),
