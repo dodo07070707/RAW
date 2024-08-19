@@ -44,7 +44,7 @@ class _MainScreenState extends State<MainScreen> {
                     children: [
                       Icon(
                         Icons.notifications_none_rounded,
-                        color: const Color(0xFFFFFFFF).withOpacity(0.8),
+                        color: const Color(0xFFFFFFFF),
                         size: screenWidth / 390 * 28,
                       ),
                       SizedBox(height: screenHeight / 844 * 4),
