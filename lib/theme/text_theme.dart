@@ -12,9 +12,44 @@ abstract class RAWTextTheme {
   static final SplashDesc = TextStyle(
     fontFamily: 'esamanruLight',
     fontSize: 12,
-    color: Colors.white.withOpacity(0.3),
+    color: Colors.white.withOpacity(0.5),
     letterSpacing: 0,
     fontWeight: FontWeight.w300,
+  );
+  static const MainTopLeft = TextStyle(
+    fontFamily: 'esamanruBold',
+    fontSize: 34,
+    color: Colors.white,
+    letterSpacing: 0,
+    height: 1.2,
+  );
+  static const MainList = TextStyle(
+    fontFamily: 'esamanruBold',
+    fontSize: 30,
+    color: Colors.white,
+    letterSpacing: 0,
+    height: 1.5,
+  );
+  static final ChartDesc = TextStyle(
+    fontFamily: 'esamanruLight',
+    fontSize: 10,
+    color: Colors.white.withOpacity(0.5),
+    letterSpacing: 0,
+    height: 1,
+  );
+  static const ChartSelect = TextStyle(
+    fontFamily: 'esamanruLight',
+    fontSize: 10,
+    color: Colors.white,
+    letterSpacing: 0,
+    height: 1,
+  );
+  static const PagesTop = TextStyle(
+    fontFamily: 'esamanruBold',
+    fontSize: 26,
+    color: Colors.white,
+    letterSpacing: 0,
+    height: 1,
   );
   static final StarthMain = TextStyle(
     fontFamily: 'Ydestreet',
