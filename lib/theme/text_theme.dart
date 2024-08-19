@@ -44,6 +44,20 @@ abstract class RAWTextTheme {
     letterSpacing: 0,
     height: 1,
   );
+  static const InfoTitle = TextStyle(
+    fontFamily: 'esamanruBold',
+    fontSize: 20,
+    color: Colors.white,
+    letterSpacing: 0,
+    height: 1,
+  );
+  static final InfoSub = TextStyle(
+    fontFamily: 'esamanruBold',
+    fontSize: 16,
+    color: Colors.white.withOpacity(0.5),
+    letterSpacing: 0,
+    height: 1,
+  );
   static const ChartSelect = TextStyle(
     fontFamily: 'esamanruLight',
     fontSize: 10,
