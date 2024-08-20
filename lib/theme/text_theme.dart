@@ -58,6 +58,13 @@ abstract class RAWTextTheme {
     letterSpacing: 0,
     height: 1,
   );
+  static final InfoSub2 = TextStyle(
+    fontFamily: 'esamanruBold',
+    fontSize: 14,
+    color: Colors.white.withOpacity(0.5),
+    letterSpacing: 0,
+    height: 1,
+  );
   static const ChartSelect = TextStyle(
     fontFamily: 'esamanruLight',
     fontSize: 10,

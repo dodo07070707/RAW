@@ -94,7 +94,7 @@ class _InfoScreenState extends State<InfoScreen> {
                       text: 'Used Libarary', style: RAWTextTheme.InfoSub),
                   CustomText(
                       text: 'readxl, dplyr, tidyr, writexl',
-                      style: RAWTextTheme.InfoSub),
+                      style: RAWTextTheme.InfoSub2),
                 ],
               ),
               SizedBox(height: screenHeight / 844 * 14),
