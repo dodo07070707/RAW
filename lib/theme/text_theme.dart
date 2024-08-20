@@ -57,6 +57,13 @@ abstract class RAWTextTheme {
     color: Colors.white.withOpacity(0.5),
     letterSpacing: 0,
     height: 1,
+    shadows: [
+      Shadow(
+        blurRadius: 15,
+        color: Colors.white.withOpacity(0.5),
+        offset: const Offset(0, 0),
+      ),
+    ],
   );
   static final InfoSub2 = TextStyle(
     fontFamily: 'esamanruBold',
@@ -64,6 +71,13 @@ abstract class RAWTextTheme {
     color: Colors.white.withOpacity(0.5),
     letterSpacing: 0,
     height: 1,
+    shadows: [
+      Shadow(
+        blurRadius: 15,
+        color: Colors.white.withOpacity(0.5),
+        offset: const Offset(0, 0),
+      ),
+    ],
   );
   static const ChartSelect = TextStyle(
     fontFamily: 'esamanruLight',
